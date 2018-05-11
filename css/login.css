@@ -1,0 +1,275 @@
+/* // COLORS
+$main-bg-color: #ECECEC;
+$text-color: #7A7A7A;
+$accent-color: rgb(0, 150, 136);
+$warning-color: #E75753;
+
+
+
+// VARIABLES
+$left-sidenav-width: 110px;
+$widget-height: 310px;
+$font-weight-bold: 600;
+$font-size-large: 22px; */
+
+.warn-button
+{
+	color:rgb(231,87,83);
+}
+
+.simple-button
+{
+	color:rgb(117,117,117);
+	
+}
+
+// LAYOUT
+body {
+  color: #7A7A7A;
+}
+
+.toolbar-button {
+  min-width: 20px;
+}
+
+.share-label {
+  vert-align: middle;
+  margin-left: 10px;
+}
+
+.page-content {
+  background-color: #ECECEC;
+}
+
+.widget-progress {
+  width: 95% !important;
+  margin-left: 10px;
+}
+
+
+// UTILS
+.capitalize {
+  text-transform: capitalize;
+}
+
+.img-circle {
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+
+// COMPONENTS
+.messages {
+  position: relative;
+
+  &-content {
+    height: 100vh;
+  }
+}
+
+.notifications-label {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 12px;
+  top: 2px;
+  right: 2px;
+  background-color: #E75753;
+}
+
+// panel-widget
+.panel-widget {
+  background-color: white;
+
+  &-toolbar {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  &-tittle {
+    color: #7A7A7A;
+  }
+}
+
+.options {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.options.ng-hide {
+  opacity:0;
+}
+
+.fixed-height-widget {
+  height: 310px;
+}
+
+// charts
+.donut-chart-title{
+  text-align: center;
+}
+
+.custom-tooltip {
+  font-size: 22px;
+  color: #7A7A7A;
+  text-align: center;
+}
+
+
+// OVERRIDES
+// angular material overrides
+md-radio-group {
+  border: none;
+}
+
+md-icon {
+  height: auto;
+}
+
+ md-sidenav.md-locked-open.md-sidenav-left {
+  width: 110px;
+  min-width: 110px;
+  max-width: 110px;
+} 
+
+a.md-button.md-warn.md-raised, a.md-button.md-warn.md-fab, .md-button.md-warn.md-raised, .md-button.md-warn.md-fab {
+  color: white;
+}
+
+md-radio-button.md-accent.md-checked .md-label span {
+  color: rgb(0, 150, 136);
+}
+
+.md-toolbar-tools h1 {
+  font-size: 22px;
+}
+
+
+md-backdrop.md-sidenav-backdrop {
+  position: fixed;
+}
+
+// libs overrides
+.material-icons {
+  vertical-align: middle;
+}
+
+.brand-logo
+{
+	width:100px;
+	height:40px;
+}
+ .title-text
+{
+	font-size: 2vw;
+} 
+
+
+
+iframe
+{
+	border:none;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 30px; }
+.material-icons.md-48 { font-size: 48px; }
+
+@media only screen and (max-width: 760px) {
+	 .title-text
+{
+	font-size: 4vw;
+} 
+   
+}
+
+
+@media  only screen and  (min-width: 768px and max-width:991px) {
+ 
+}
+@media only screen and (min-width: 992px and max-width:1199px) {
+	
+ 
+}
+@media only screen and (min-width: 1200px) {
+	
+ 
+}
+@media only screen and (max-width: 417px) {
+		 .title-text
+{
+	font-size: 3.7vw;
+}
+ 
+}
+
+@media only screen and (min-width: 960px) {
+	
+ .flex, .report-container
+{
+	height:100%;
+}
+.title-text
+{
+	 margin-top:2%; 
+}
+}
+@media only screen and (max-width: 959px) {
+	md-sidenav
+	{
+	width:150px;
+	max-width:150px;
+	min-width:150px;
+	}
+}
+
+
+.nvd3.nv-pie .nv-pie-title {
+  fill: rgb(68, 68, 68);
+  font-weight: 600;
+  font-size: 22px !important;
+}
+
+.nvtooltip {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
+
+.orange .md-bar2 {
+  background-color: orange;
+}
+
+.orange .md-container {
+  background-color: rgb(255, 236, 201)
+}
+
+
+#spinner {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+    right:0;
+   position: fixed;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#img-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom:50%;
+  z-index: 100;
+  text-align: center;
+}

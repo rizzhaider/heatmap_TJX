@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="lib/bootstrap.min.css">
+<link rel="stylesheet" href="lib/bootstrap-datepicker.min.css">
+<link rel="stylesheet" href="lib/jquery.timepicker.min.css">
+<link rel="stylesheet" href="lib/leaflet.css">
+<link rel="stylesheet" href="lib/toastr.css">
+<link rel="stylesheet" href="css/hsc_heatmap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row m-1" id="fieldSelectRow">
+			<select id="storeSelect"
+				class="col-sm-4 col-md-3 offset-lg-2 col-lg-2 form-control"></select>
+
+			<p id="pStoreDateStart" class="col-sm-4 col-md-3 col-lg-2">
+				<input type="text" class="date start form-control"
+					id="storeDateStart" readonly="readonly" />
+			</p>
+
+			<div class="col-auto p-2">to</div>
+
+			<p id="pStoreDateEnd" class="col-sm-4 col-md-3 col-lg-2">
+				<input type="text" class="date end form-control" id="storeDateEnd" readonly="readonly" />
+			</p>
+
+			<div class="col">
+				<button type="button" class="btn btn-default" id="fetchNewStoreData">Apply</button>
+			</div>
+		</div>
+		<!-- row fieldSelectRow-->
+
+		<div id="spinner" style="display: none;">
+			<img id="img-spinner" src="./img/spinner.gif" alt="Loading" />
+		</div>
+
+		<div class="row">
+			<div id="hsc_map" class="hsc_map_class"></div>
+		</div>
+		<!-- row -->
+
+	</div>
+	<!-- container -->
+</body>
+
+
+<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="lib/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="lib/datepair.js"></script>
+<script type="text/javascript" src="lib/jquery.datepair.js"></script>
+<script type="text/javascript" src="lib/leaflet.js"></script>
+<script type="text/javascript" src="lib/leaflet-heat.js"></script>
+<script type="text/javascript" src="lib/moment.min.js"></script>
+<script type="text/javascript" src="lib/toastr.js"></script>
+<script src="locations/tjxLocation.json"></script>
+<script type="text/javascript" src="js/tjx_heatmap.js"></script>
+<script type="text/javascript" src="js/tjx_ut.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+</html>
